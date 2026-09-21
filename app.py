@@ -25,11 +25,10 @@ if st.button('Predict'):
     # Convert input data to DataFrame
     input_df = pd.DataFrame([input_data])
     
-    # Scale the input data using the loaded scaler
-    scaled_input = scaler.transform(input_df)
+    
     
     # Make prediction
-    prediction = model.predict(scaled_input)[0]
+    prediction = model.predict(input_df)[0]
     prediction_proba = model.predict_proba(scaled_input)[0]
     
     st.subheader('Prediction Results:')

@@ -29,7 +29,7 @@ if st.button('Predict'):
     
     # Make prediction
     prediction = model.predict(input_df)[0]
-    prediction_proba = model.predict_proba(scaled_input)[0]
+   
     
     st.subheader('Prediction Results:')
     if prediction == 1:

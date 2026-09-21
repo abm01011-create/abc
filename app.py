@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 
 # Load the trained model and scaler
-model = joblib.load('delivery_delay_model.sav')
+model = joblib.load('delivery_delay.sav')
 scaler = joblib.load('scaler.sav')
 
 # Define the expected feature names based on your training data
